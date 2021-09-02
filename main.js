@@ -29,9 +29,13 @@ const searchResultDisplay = data => {
         <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h2 class="card-title mb-4 fw-bold text-success">${book.title}</h2>
-            <h4 class="text-dark">Auther Name: ${book.author_name}</h4>
-            <h5 class="text-muted">Publisher: ${book.publisher}</h5>
+            <h4 class="text-dark">Auther Name: ${book.author_name}</h4><br>
+            <h5 class="text-muted"><span class="text-dark">Publisher:</span> ${book.publisher}</h5>
         </div>
+        <div class='mx-2'>   
+        <small class="text-secondary">First Published : ${book.first_publish_year}
+        </small>
+    </div>
     </div>
         `
         searchResult.appendChild(div)
